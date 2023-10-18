@@ -29,9 +29,6 @@ class Solution {
         while(!q.isEmpty()) {
             int u = q.poll();
             for(int v: adjMatrix[u]) {
-                if(visited[v]) {
-                    return new int[]{};
-                }
                 if(--inDegree[v] == 0) {
                     visited[v] = true;
                     courseOrder[count++] = v;
