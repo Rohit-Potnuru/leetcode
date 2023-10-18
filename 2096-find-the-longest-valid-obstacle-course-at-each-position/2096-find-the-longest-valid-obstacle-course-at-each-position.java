@@ -19,9 +19,7 @@ class Solution {
             }
             stack[start] = obstacles[i];
             ans[i] = start + 1;
-            // System.out.println(Arrays.toString(stack) + " " + start);
         }
-        // System.out.println("-------------------");
         return ans;
     }
 }
