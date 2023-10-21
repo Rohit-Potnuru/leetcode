@@ -1,23 +1,22 @@
 class Solution {
     public int constrainedSubsetSum(int[] nums, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return nums[o2] - nums[o1];  // this will order the queue in descending order
-            }
-        });
+        Deque<Integer> deque = new ArrayDeque<>();
 
         int max = nums[0];
         for(int i = 0; i < nums.length; i++) {
-            while(!pq.isEmpty() && i - pq.peek() > k) {
-                pq.remove();
+            while(!deque.isEmpty() && i - deque.getFirst() > k) {
+                deque.removeFirst();
             }
 
-            if(!pq.isEmpty()) {
-                nums[i] = Math.max(nums[i], nums[i] + nums[pq.peek()]); 
+            if(!deque.isEmpty()) {
+                nums[i] = Math.max(nums[i], nums[i] + nums[deque.getFirst()]); 
             }
             max = Math.max(nums[i], max);
-            pq.add(i);
+
+            while(!deque.isEmpty() && nums[deque.getLast()] < nums[i]) {
+                deque.removeLast();
+            }
+            deque.add(i);
         }
         return max;
     }
