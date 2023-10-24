@@ -18,11 +18,13 @@ class Solution {
         ArrayList<Integer> ans = new ArrayList<>();
         if(root == null)
             return ans;
+        
+        int size, max;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while(!queue.isEmpty()) {
-            int size = queue.size();
-            int max = Integer.MIN_VALUE;
+            size = queue.size();
+            max = Integer.MIN_VALUE;
             while(size > 0) {
                 TreeNode curr = queue.poll();
                 max = Math.max(curr.val, max);
