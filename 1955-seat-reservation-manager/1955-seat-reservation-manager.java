@@ -1,12 +1,14 @@
 class SeatManager {
-    PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+    PriorityQueue<Integer> pq;
+    int count;
     public SeatManager(int n) {
-        for(int i = 1; i <=n; i++) {
-            this.pq.add(i);
-        }
+        this.count = 1;
+        this.pq = new PriorityQueue<Integer>();
     }
     
     public int reserve() {
+        if(pq.size() == 0)
+            return this.count++;
         return this.pq.poll();
     }
     
