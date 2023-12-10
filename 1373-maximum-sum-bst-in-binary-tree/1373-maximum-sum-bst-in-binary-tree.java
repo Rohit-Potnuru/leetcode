@@ -14,30 +14,40 @@
  * }
  */
 class Solution {
+    static class NodeWrapper {
+        int sum;
+        int max;
+        int min;
+        boolean validBST = true;
+        public NodeWrapper(TreeNode node) {
+            this.sum = node.val;
+            this.max = node.val;
+            this.min = node.val;
+            this.validBST = true;
+        }
+    }
+
     int maxSum = 0;
-    private int[] sumBST(TreeNode root) {
-        int[] left = null, right = null;
-        int[] ans = new int[]{root.val, root.val, root.val, 1};
+    private NodeWrapper sumBST(TreeNode root) {
+        NodeWrapper temp = null;
+        NodeWrapper ans = new NodeWrapper(root);
         if(root.left != null) {
-            left = sumBST(root.left);
-            ans[0] = Math.min(ans[0], left[0]);
-            ans[1] = Math.max(ans[1], left[1]);
-            ans[2] += left[2];
-            if(left[1] >= root.val || left[3] == 0) {
-                ans[3] = 0;
-            }
+            temp = sumBST(root.left);
+            ans.min = Math.min(ans.min, temp.min);
+            ans.max = Math.max(ans.max, temp.max);
+            ans.sum += temp.sum;
+            ans.validBST = ans.validBST && temp.validBST && temp.max < root.val;
         }
         if(root.right != null) {
-            right = sumBST(root.right);
-            ans[0] = Math.min(ans[0], right[0]);
-            ans[1] = Math.max(ans[1], right[1]);
-            ans[2] += right[2];
-            if(right[0] <= root.val || right[3] == 0) {
-                ans[3] = 0;
-            }
+            temp = sumBST(root.right);
+            ans.min = Math.min(ans.min, temp.min);
+            ans.max = Math.max(ans.max, temp.max);
+            ans.sum += temp.sum;
+            ans.validBST = ans.validBST && temp.validBST && root.val < temp.min;
         }
-        if(ans[3] == 1) {
-            maxSum = Math.max(maxSum, ans[2]);
+        System.out.println(root.val + " " + ans.validBST);
+        if(ans.validBST) {
+            maxSum = Math.max(maxSum, ans.sum);
         }
         return ans;
     }
