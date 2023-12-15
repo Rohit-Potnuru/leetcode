@@ -10,6 +10,7 @@ class Solution {
         }
         return total;
     }
+    
     public int numTilePossibilities(String tiles) {
         int[] freq = new int[26];
         for(int i = 0; i < tiles.length(); i++) {
