@@ -7,5 +7,5 @@ WITH febOrders AS (
 )
 
 SELECT p.product_name, fo.unit
-FROM PRODUCTS p
-INNER JOIN febOrders fo ON (p.product_id = fo.product_id)
+FROM febOrders fo
+LEFT JOIN products p ON (p.product_id = fo.product_id)
