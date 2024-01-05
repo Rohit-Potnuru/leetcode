@@ -21,21 +21,22 @@ class TimeMap {
     }
     
     public String get(String key, int timestamp) {
-        String ans = "";
-        int start = 0, end = this.timeMap.get(key).size(), mid;
-        while(start < end) {
-            mid = (end - start)/2 + start;
-            int midTimestamp = this.timeMap.get(key).get(mid).timestamp;
-            if(midTimestamp <= timestamp) {
-                start = mid + 1;
+        if(this.timeMap.containsKey(key)) {
+            int start = 0, end = this.timeMap.get(key).size(), mid;
+            while(start < end) {
+                mid = (end - start)/2 + start;
+                int midTimestamp = this.timeMap.get(key).get(mid).timestamp;
+                if(midTimestamp <= timestamp) {
+                    start = mid + 1;
+                }
+                else {
+                    end = mid;
+                }
             }
-            else {
-                end = mid;
-            }
+            if(start != 0) 
+                return this.timeMap.get(key).get(start - 1).value;
         }
-        if(start != 0) 
-            ans = this.timeMap.get(key).get(start - 1).value;
-        return ans;
+        return "";
     }
 }
 
