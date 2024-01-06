@@ -7,8 +7,9 @@ class Solution {
         }
 
         Arrays.sort(nums, Comparator.comparingInt(i -> endTime[i]));
+        int mid, start, end;
         for(int i = 1; i < n; i++) {
-            int mid, start = 0, end = i;
+            start = 0; end = i;
             while(start < end) {
                 mid = (end - start)/2 + start;
                 if(endTime[nums[mid]] <= startTime[nums[i]]) {
