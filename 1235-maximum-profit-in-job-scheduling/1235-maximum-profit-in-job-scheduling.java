@@ -1,19 +1,4 @@
 class Solution {
-    public String twoDArrayToString(int[][] array) {
-    StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < array.length; i++) {
-        for (int j = 0; j < array[i].length; j++) {
-            sb.append(array[i][j]);
-            if (j < array[i].length - 1) {
-                sb.append(", "); // Separate elements in the same row with a comma
-            }
-        }
-        if (i < array.length - 1) {
-            sb.append("\n"); // Separate rows with a new line
-        }
-    }
-    return sb.toString();
-}
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         int n = profit.length;
         int[][] nums = new int[n][3];
