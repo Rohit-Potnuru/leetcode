@@ -14,10 +14,7 @@ class Solution {
                     continue; 
                 }
                 int diffInt = (int) diff;
-                if(!dp[i].containsKey(diffInt)) {
-                    dp[i].put(diffInt, 0);
-                }
-                dp[i].put(diffInt, dp[i].get(diffInt) + 1);
+                dp[i].put(diffInt, dp[i].getOrDefault(diffInt, 0) + 1);
 
                 if(dp[j].containsKey(diffInt)) {
                     dp[i].put(diffInt, dp[i].get(diffInt) + dp[j].get(diffInt));
