@@ -12,9 +12,8 @@ class Solution {
             if(res.size() == freq) {
                 res.add(new ArrayList<>());
             }
-            res.get(freq).add(num);
+            res.get(freq++).add(num);
             prev = num;
-            freq++;
         }
         return res;
     }
