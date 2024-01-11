@@ -16,24 +16,22 @@
 class Solution {
     int maxDiff;
     public int[] dfs(TreeNode root) {
-        int[] temp = new int[2], temp1, temp2;
-        temp[0] = Integer.MAX_VALUE;
-        temp[1] = Integer.MIN_VALUE;
+        int[] temp;
+        int minVal = root.val, maxVal = root.val;
+
         if(root.left != null) {
             temp = dfs(root.left);
-            this.maxDiff = Math.max(Math.abs(temp[0] - root.val), this.maxDiff);
-            this.maxDiff = Math.max(Math.abs(temp[1] - root.val), this.maxDiff);
+            minVal = Math.min(minVal, temp[0]);
+            maxVal = Math.max(maxVal, temp[1]);
         }
         if(root.right != null) {
-            temp1 = dfs(root.right);
-            temp[0] = Math.min(temp[0], temp1[0]);
-            temp[1] = Math.max(temp[1], temp1[1]);
-            this.maxDiff = Math.max(Math.abs(temp[0] - root.val), this.maxDiff);
-            this.maxDiff = Math.max(Math.abs(temp[1] - root.val), this.maxDiff);
+            temp = dfs(root.right);
+            minVal = Math.min(minVal, temp[0]);
+            maxVal = Math.max(maxVal, temp[1]);
         }
-        temp[0] = Math.min(temp[0], root.val);
-        temp[1] = Math.max(temp[1], root.val);
-        return temp;
+        this.maxDiff = Math.max(Math.abs(minVal - root.val), this.maxDiff);
+        this.maxDiff = Math.max(Math.abs(maxVal- root.val), this.maxDiff);
+        return new int[]{minVal, maxVal};
     }
     public int maxAncestorDiff(TreeNode root) {
         this.maxDiff = 0;
