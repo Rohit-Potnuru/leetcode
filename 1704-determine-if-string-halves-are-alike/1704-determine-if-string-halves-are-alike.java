@@ -7,7 +7,7 @@ class Solution {
             if(vowels.contains(s.charAt(i))) {
                 count++;
             }
-            if(vowels.contains(s.charAt(n/2 + i).toLowerCase(ch))) {
+            if(vowels.contains(Character.toLowerCase(s.charAt(n/2 + i)))) {
                 count--;
             }
         }
