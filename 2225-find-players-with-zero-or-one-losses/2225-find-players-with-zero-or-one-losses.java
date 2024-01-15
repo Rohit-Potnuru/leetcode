@@ -1,35 +1,38 @@
 class Solution {
     public List<List<Integer>> findWinners(int[][] matches) {
-        HashSet<Integer>[] lose = new HashSet[3];
-        for(int i = 0; i < 3; i++) lose[i] = new HashSet<>();
-        int winner, loser;
-        boolean flag;
-        for(int i = 0; i < matches.length; i++) {
-            winner = matches[i][0];
-            loser = matches[i][1];
+        int[] losses = new int[100001];
 
-            //adding winner
-            if(!lose[2].contains(winner) && !lose[1].contains(winner)) {
-                lose[0].add(winner);
-            }
+        for (int i = 0; i < matches.length; i++) {
+            int win = matches[i][0];
+            int loss = matches[i][1];
 
-            flag = true;
-            for(int j = 0; j < 3; j++) {
-                if(lose[j].contains(loser)) {
-                    lose[j].remove(loser);
-                    lose[Math.min(j + 1, 2)].add(loser);
-                    flag = false;
-                    break;
-                }
+            if (losses[win] == 0) {
+                losses[win] = -1;
+            } 
+
+            if (losses[loss] == -1) {
+                losses[loss] = 1;
+            } else {
+                losses[loss]++;
             }
-            if(flag) lose[1].add(loser);
         }
 
-        List<List<Integer>> ans = new ArrayList<>();
-        ans.add(new ArrayList<>(lose[0]));
-        ans.add(new ArrayList<>(lose[1]));
-        Collections.sort(ans.get(0)); 
-        Collections.sort(ans.get(1)); 
-        return ans;
+        List<Integer> zeroLoss = new ArrayList<>();
+        List<Integer> oneLoss = new ArrayList<>();
+
+        List<List<Integer>> result = new ArrayList<>();
+
+        for (int i = 0; i < losses.length; i++) {
+            if (losses[i] == -1) {
+                zeroLoss.add(i);
+            } else if (losses[i] == 1) {
+                oneLoss.add(i);
+            }
+        }
+
+        result.add(zeroLoss);
+        result.add(oneLoss);
+
+        return result;
     }
 }
