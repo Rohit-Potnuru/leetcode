@@ -21,9 +21,8 @@ class RandomizedSet {
         }
 
         int idx = map.get(val);
-        int tempVal = this.arr.get(this.arr.size() - 1);
-        map.put(tempVal, idx);
-        this.arr.set(idx, tempVal);
+        this.arr.set(idx, this.arr.get(this.arr.size() - 1));
+        map.put(this.arr.get(idx), idx);
         this.arr.remove(this.arr.size() - 1);
         map.remove(val);
         return true;
