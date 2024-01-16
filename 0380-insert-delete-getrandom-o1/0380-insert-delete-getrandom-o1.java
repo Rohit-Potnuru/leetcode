@@ -19,7 +19,6 @@ class RandomizedSet {
         if(!map.containsKey(val)) {
             return false;
         }
-
         int idx = map.get(val);
         this.arr.set(idx, this.arr.get(this.arr.size() - 1));
         map.put(this.arr.get(idx), idx);
