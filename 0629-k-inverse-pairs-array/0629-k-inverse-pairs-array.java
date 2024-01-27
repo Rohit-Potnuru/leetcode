@@ -20,16 +20,13 @@
 
 
 class Solution {
-    HashMap<Integer, HashMap<Integer, Integer>> dp = new HashMap<>();
+    int[][] dp = new int[1001][1001];
     public int kInversePairs(int n, int k) {
         if(k < 0 || k > n * (n  - 1)/2) return 0;
         if(n < 3) return 1;
 
-        if(!dp.containsKey(n)) {
-            dp.put(n, new HashMap<>());
-        }
-        else if(dp.get(n).containsKey(k)) {
-            return dp.get(n).get(k);
+        if(dp[n][k] > 0) {
+            return dp[n][k];
         }
         
         int sum = 0;
@@ -41,7 +38,7 @@ class Solution {
             sum = (kInversePairs(n - 1, k) + MOD - ((k - n >= 0) ? kInversePairs(n - 1, k - n): 0)) % MOD;
             sum = (sum + kInversePairs(n, k - 1)) % MOD;
         }
-        dp.get(n).put(k, sum);
+        dp[n][k] = sum;
         return sum;
     }
 }
