@@ -9,8 +9,8 @@ class Solution {
                 if(max - min > k) {
                     return new int[0][0];
                 }
-                max = Integer.MIN_VALUE;
-                min = Integer.MAX_VALUE;
+                max = nums[i];
+                min = nums[i];
             }
             res[i/3][i%3] = nums[i];
             max = Math.max(max, nums[i]);
