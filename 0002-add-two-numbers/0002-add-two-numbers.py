@@ -8,12 +8,12 @@ class Solution(object):
         res = ListNode()
         headRes = res
         c, vsum, nl1, nl2 = 0, 0, 0, 0
-        while l1 != None or l2 != None :
+        while l1 or l2 :
             nl1, nl2 = 0, 0
-            if l1 != None:
+            if l1:
                 nl1, l1 = l1.val, l1.next
 
-            if l2 != None:
+            if l2:
                 nl2, l2 = l2.val, l2.next
 
             vsum = (nl1 + nl2 + c) % 10
