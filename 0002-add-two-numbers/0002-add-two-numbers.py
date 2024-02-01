@@ -8,7 +8,7 @@ class Solution(object):
         res = ListNode()
         headRes = res
         c, nl1, nl2 = 0, 0, 0
-        while l1 or l2 or c != 0:
+        while l1 or l2:
             nl1, nl2 = 0, 0
             if l1:
                 nl1, l1 = l1.val, l1.next
@@ -20,5 +20,7 @@ class Solution(object):
             c = (nl1 + nl2 + c) / 10
             res = res.next
 
+        if c > 0:
+            res.next = ListNode(c)
         return headRes.next
         
