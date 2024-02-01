@@ -13,7 +13,6 @@ class Solution {
                 min = Math.min(min, res[i][j]);
             }
             if(max - min > k) {
-                System.out.println(min + " " + max);
                 return new int[0][0];
             }
         }
