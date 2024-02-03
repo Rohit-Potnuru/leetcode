@@ -4,7 +4,7 @@ class Solution {
         int[] maxSum = new int[n];
         for(int i = 0; i < n; i++) {
             maxVal = arr[i];
-            for(int j = 0; j < k && i - j >= 0; j++) {
+            for(int j = 0; j < Math.min(i + 1, k); j++) {
                 maxVal = Math.max(maxVal, arr[i - j]);
                 temp = maxVal * (j + 1);
                 if(i - j - 1 >= 0) {
