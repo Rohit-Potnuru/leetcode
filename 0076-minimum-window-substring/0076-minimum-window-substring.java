@@ -1,5 +1,8 @@
 class Solution {
     public String minWindow(String s, String t) {
+        if(s == null || t == null || s.length() == 0 || t.length() == 0 || s.length() < t.length()) {
+            return "";
+        }
         int n = s.length();
         int[] freqt = new int[128];
         int len_t = t.length();
