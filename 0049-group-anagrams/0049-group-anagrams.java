@@ -11,8 +11,8 @@ class Solution {
             }
 
             StringBuilder sb = new StringBuilder();
-            for(int i: count) {
-                sb.append(i); 
+            for(int i = 0; i < 26; i++) {
+                sb.append((char)(i + 'a')).append(count[i]); 
             }
             temp = sb.toString();
             if(!map.containsKey(temp)) {
