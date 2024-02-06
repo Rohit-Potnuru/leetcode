@@ -5,16 +5,9 @@ class Solution {
         String temp;
 
         for(String s: strs) {
-            int[] count = new int[26];
-            for(char ch: s.toCharArray()) {
-                count[ch - 'a']++;
-            }
-
-            StringBuilder sb = new StringBuilder();
-            for(int i = 0; i < 26; i++) {
-                sb.append((char)(i + 'a')).append(count[i]); 
-            }
-            temp = sb.toString();
+            char[] charArray = s.toCharArray();
+            Arrays.sort(charArray);
+            temp = new String(charArray);
             if(!map.containsKey(temp)) {
                 map.put(temp, res.size());
                 res.add(new ArrayList<>());
