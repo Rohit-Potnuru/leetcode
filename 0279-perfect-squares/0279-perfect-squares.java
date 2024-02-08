@@ -1,21 +1,25 @@
 class Solution {
+    /*
+      Implemented based on this Solution: https://leetcode.com/problems/perfect-squares/solutions/4694905/legendre-s-3-square-lagrange-s-4-square-theorems-0ms-beats-100
+    */
+    public boolean isSquare(int n) {
+        double sqrt = Math.sqrt(n);
+        return sqrt == (int)(sqrt);
+    }
+
     public int numSquares(int n) {
-        int[] sum = new int[n + 1];
-        int maxPow = 0;
-        for(int i = 1; i <= n; i++) {
-            if((maxPow + 1) * (maxPow + 1) == i) {
-                sum[i] = 1;
-                maxPow++;
-            }
-            else {
-                int minSum = Integer.MAX_VALUE;
-                for(int j = 1; j <= maxPow; j++) {
-                    minSum = Math.min(minSum, sum[i - j * j]);
-                }
-                sum[i] = minSum + 1;
-            }
+        while(n % 4 == 0) {
+            n /= 4;
         }
-        return sum[n];
+
+        if(n % 8 == 7) return 4;
+        if(isSquare(n)) return 1;
+        int sqrt = (int)Math.sqrt(n);
+        for(int i = 1; i <= sqrt; i++) {
+            int y = n - i * i;
+            if(isSquare(y)) return 2;
+        }
+        return 3;
     }
 }
 
