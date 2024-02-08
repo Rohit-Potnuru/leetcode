@@ -13,8 +13,8 @@ class Solution {
         }
 
         if(n % 8 == 7) return 4;
-        if(isSquare(n)) return 1;
-        int sqrt = (int)Math.sqrt(n);
+        double sqrt = Math.sqrt(n);
+        if(sqrt == (int)(sqrt)) return 1;
         for(int i = 1; i <= sqrt; i++) {
             int y = n - i * i;
             if(isSquare(y)) return 2;
