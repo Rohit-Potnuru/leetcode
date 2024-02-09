@@ -5,13 +5,13 @@ class Solution {
 
         int[] memo = new int[n];
         for(int i = n - 1 ; i >= 0; i--) {
+            memo[i]++;
             for(int j = i + 1; j < n; j++) {
                 if(nums[j] % nums[i] == 0) {
-                    memo[i] = Math.max(memo[i], memo[j]);
+                    memo[i] = Math.max(memo[i], memo[j] + 1);
                 }
             }
 
-            memo[i]++;
             if(max_len < memo[i]) {
                 max_len = memo[i];
                 max_index = i;
@@ -21,7 +21,7 @@ class Solution {
         List<Integer> res = new ArrayList<>();
         num = nums[max_index];
         for(int i = 0; i < n; i++) {
-            if(memo[i] == max_len && nums[i] % num == 0) {
+            if(nums[i] % num == 0 && memo[i] == max_len) {
                 res.add(nums[i]);
                 max_len--;
                 num = nums[i];
