@@ -1,37 +1,38 @@
 class Solution {
-    private int[][] grid;
-    private Integer[][][] memo;
 
-    public int cherryPickup(int[][] grid) {
-        this.grid = grid;
-        int n = grid.length;
-        int m = grid[0].length;
-        this.memo = new Integer[n][m][m];
-        return dp(0, 0, m - 1);
-    }
-
-    private int dp(int r, int c1, int c2) {
-        int n = grid.length;
-        int m = grid[0].length;
-        if (r == n) return 0; // Base case: beyond the last row
-        if (c1 < 0 || c1 >= m || c2 < 0 || c2 >= m) return 0; // Out of bounds
-        if (memo[r][c1][c2] != null) return memo[r][c1][c2]; // Use memoized result if available
-
-        // Calculate cherries picked by both robots at the current cell
-        int cherries = grid[r][c1];
-        if (c1 != c2) cherries += grid[r][c2]; // Add cherries from the second robot if it's in a different column
-
-        // Try all movements for both robots to the next row
-        int maxCherries = 0;
-        for (int move1 = -1; move1 <= 1; move1++) {
-            for (int move2 = -1; move2 <= 1; move2++) {
-                int nextC1 = c1 + move1;
-                int nextC2 = c2 + move2;
-                maxCherries = Math.max(maxCherries, cherries + dp(r + 1, nextC1, nextC2));
+    public int cherryPickup(int[][] grid) {        
+        int m = grid.length;
+        int n = grid[0].length;
+        int[][][] dp = new int[m][n][n];
+        for (int c1 = 0; c1 < n; c1++) {
+            for (int c2 = 0; c2 < n; c2++) {
+                dp[m-1][c1][c2] = grid[m-1][c1] + (c1 == c2 ? 0 : grid[m-1][c2]);
             }
         }
+        for (int i = m - 2; i >= 0; i--) {
+            for (int c1 = 0; c1 < n; c1++) {
+                for (int c2 = 0; c2 < n; c2++) {
+                    dp[i][c1][c2] = grid[i][c1] + (c1 == c2 ? 0 : grid[i][c2]);
+                    int maxCandidate = 0;
+                    for (int j1 = -1; j1 <=1; j1++) {
+                        if (!inBounds(c1+j1, n)) {
+                            continue;
+                        }
+                        for (int j2 = -1; j2 <= 1; j2++) {
+                            if (!inBounds(c2+j2, n)) {
+                                continue;
+                            }
+                            maxCandidate = Math.max(maxCandidate, dp[i+1][c1+j1][c2+j2]);
+                        }
+                    }
+                    dp[i][c1][c2] += maxCandidate;
+                }
+            }
+        }
+        return dp[0][0][n-1];
+    }
 
-        memo[r][c1][c2] = maxCherries; // Memoize the result
-        return maxCherries;
+    private boolean inBounds(int c, int n) {
+        return c >= 0 && c < n;
     }
 }
