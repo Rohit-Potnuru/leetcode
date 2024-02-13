@@ -1,35 +1,33 @@
 class Solution {
-public int numMatchingSubseq(String s, String[] words) {
-        Word[] heads = new Word[26];
-        // fill the heads
-        for (int i = 0; i < 26; i++) heads[i] = new Word("", 0);
-        for (String word : words) {
-            Word head = heads[word.charAt(0) - 'a'];
-            Word newWord = new Word(word, 0);
-            newWord.next = head.next;
-            head.next = newWord;
+    public int numMatchingSubseq(String s, String[] words) {
+        Word[] headWords = new Word[26];
+        Word curr, temp;
+        for(String word : words) {
+            temp = headWords[word.charAt(0) - 'a'];
+            headWords[word.charAt(0) - 'a'] = new Word(word, 0, temp);
         }
+
         int count = 0;
-        for (char c : s.toCharArray()) {
-            Word curHead = heads[c - 'a'];
-            Word cur = curHead.next;
-            curHead.next = null;
-            while (cur != null) {
-                Word next = cur.next;
-                if (cur.index == cur.word.length() - 1) {
+        for(char ch: s.toCharArray()) {
+            curr = headWords[ch - 'a'];
+            while(curr != null) {
+                headWords[ch - 'a'] = curr.next;
+                temp = curr.next;
+
+                curr.index++;
+                if(curr.index == curr.word.length()) {
                     count++;
-                } else {
-                    cur.index++;
-                    Word nextHead = heads[cur.word.charAt(cur.index) - 'a'];
-                    cur.next = nextHead.next;
-                    nextHead.next = cur;
                 }
-                cur = next;
+                else {
+                    curr.next = headWords[curr.word.charAt(curr.index) - 'a'];
+                    headWords[curr.word.charAt(curr.index) - 'a'] = curr;
+                }
+                curr = temp;
             }
         }
         return count;
     }
-    
+
     class Word {
         String word;
         int index;
@@ -37,6 +35,12 @@ public int numMatchingSubseq(String s, String[] words) {
         Word(String word, int index) {
             this.word = word;
             this.index = index;
+            this.next = null;
+        }
+        Word(String word, int index, Word next) {
+            this.word = word;
+            this.index = index;
+            this.next = next;
         }
     }
 }
