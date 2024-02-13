@@ -33,11 +33,6 @@ class Solution {
         String word;
         int index;
         Word next;
-        Word(String word, int index) {
-            this.word = word;
-            this.index = index;
-            this.next = null;
-        }
         Word(String word, int index, Word next) {
             this.word = word;
             this.index = index;
