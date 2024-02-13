@@ -16,7 +16,6 @@ class Solution {
             if(uniqCount == 0) {
                 res.add(i - prev);
                 prev = i;
-                for(int j = 0; j < 26; j++) tempFreq[j] = 0;
             }
         }    
         return res;    
