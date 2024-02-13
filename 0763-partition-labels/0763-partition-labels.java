@@ -7,13 +7,13 @@ class Solution {
         }
 
         List<Integer> res = new ArrayList<>();
-        int fullcount = 0, uniqCount = 0, prev = -1;
+        int uniqCount = 0, prev = -1, idx;
         for(int i = 0; i < n; i++) {
-            char ch = s.charAt(i);
-            tempFreq[ch - 'a']++;
-            if(tempFreq[ch - 'a'] == 1) uniqCount++;
-            if(tempFreq[ch - 'a'] == freq[ch - 'a']) fullcount++;
-            if(fullcount == uniqCount) {
+            idx = s.charAt(i) - 'a';
+            tempFreq[idx]++;
+            if(tempFreq[idx] == 1) uniqCount++;
+            if(tempFreq[idx] == freq[idx]) uniqCount--;
+            if(uniqCount == 0) {
                 res.add(i - prev);
                 prev = i;
                 for(int j = 0; j < 26; j++) tempFreq[j] = 0;
