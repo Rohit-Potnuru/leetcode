@@ -2,15 +2,18 @@ class Solution {
     public int numMatchingSubseq(String s, String[] words) {
         Word[] headWords = new Word[26];
         Word curr, temp;
+        int i;
         for(String word : words) {
-            temp = headWords[word.charAt(0) - 'a'];
-            headWords[word.charAt(0) - 'a'] = new Word(word, 0, temp);
+            i = word.charAt(0) - 'a';
+            temp = headWords[i];
+            headWords[i] = new Word(word, 0, temp);
         }
 
         int count = 0;
         for(char ch: s.toCharArray()) {
-            curr = headWords[ch - 'a'];
-            headWords[ch - 'a'] = null;
+            i = ch - 'a';
+            curr = headWords[i];
+            headWords[i] = null;
             while(curr != null) {
                 temp = curr.next;
 
@@ -20,8 +23,9 @@ class Solution {
                     curr.next = null;
                 }
                 else {
-                    curr.next = headWords[curr.word.charAt(curr.index) - 'a'];
-                    headWords[curr.word.charAt(curr.index) - 'a'] = curr;
+                    i = curr.word.charAt(curr.index) - 'a';
+                    curr.next = headWords[i];
+                    headWords[i] = curr;
                 }
                 curr = temp;
             }
