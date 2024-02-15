@@ -24,7 +24,7 @@ class Solution {
         return maxScore;
     }
     public int maxScoreWords(String[] words, char[] letters, int[] score) {
-        int n = words.length;
+        int n = words.length, sum;
         freq_letters = new int[26];
         word_scores = new int[n];
         freq_words = new int[n][26];
@@ -32,10 +32,12 @@ class Solution {
             freq_letters[ch - 'a']++;
         }
         for(int i = 0; i < n; i++) {
+            sum = 0;
             for(char ch: words[i].toCharArray()) {
                 freq_words[i][ch - 'a']++;
-                word_scores[i] += score[ch - 'a'];
+                sum += score[ch - 'a'];
             }
+            word_scores[i] = sum;
         }
         return maxScoreWords(0);
     }
