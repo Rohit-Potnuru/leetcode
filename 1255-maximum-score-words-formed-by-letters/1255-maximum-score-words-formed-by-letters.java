@@ -1,7 +1,9 @@
 class Solution {
-    public int maxScoreWords(int pos, int[][] freq_words, int[] word_scores, int[] freq_letters) {
+    int[] word_scores, freq_letters;
+    int[][] freq_words;
+    public int maxScoreWords(int pos) {
         if(pos >= freq_words.length) return 0;
-        int maxScore = maxScoreWords(pos + 1, freq_words, word_scores, freq_letters);
+        int maxScore = maxScoreWords(pos + 1);
 
         for(int i = 0; i < 26; i++) {
             if(freq_words[pos][i] > freq_letters[i]) {
@@ -13,7 +15,7 @@ class Solution {
             freq_letters[i] -= freq_words[pos][i];
         }
 
-        maxScore = Math.max(maxScore, word_scores[pos] + maxScoreWords(pos + 1, freq_words, word_scores, freq_letters));
+        maxScore = Math.max(maxScore, word_scores[pos] + maxScoreWords(pos + 1));
 
         for(int i = 0; i < 26; i++) {
             freq_letters[i] += freq_words[pos][i];
@@ -23,9 +25,9 @@ class Solution {
     }
     public int maxScoreWords(String[] words, char[] letters, int[] score) {
         int n = words.length;
-        int[] freq_letters = new int[26];
-        int[][] freq_words = new int[n][26];
-        int[] word_scores = new int[n];
+        freq_letters = new int[26];
+        word_scores = new int[n];
+        freq_words = new int[n][26];
         for(char ch: letters) {
             freq_letters[ch - 'a']++;
         }
@@ -35,6 +37,6 @@ class Solution {
                 word_scores[i] += score[ch - 'a'];
             }
         }
-        return maxScoreWords(0, freq_words, word_scores, freq_letters);
+        return maxScoreWords(0);
     }
 }
