@@ -5,17 +5,17 @@ class Solution {
         if(pos >= freq_words.length) return 0;
         int maxScore = maxScoreWords(pos + 1);
 
+        boolean isValid = true;
         for(int i = 0; i < 26; i++) {
             if(freq_words[pos][i] > freq_letters[i]) {
-                return maxScore;
+                isValid = false;
             }
-        }
-
-        for(int i = 0; i < 26; i++) {
             freq_letters[i] -= freq_words[pos][i];
         }
 
-        maxScore = Math.max(maxScore, word_scores[pos] + maxScoreWords(pos + 1));
+        if(isValid) {
+            maxScore = Math.max(maxScore, word_scores[pos] + maxScoreWords(pos + 1));
+        }
 
         for(int i = 0; i < 26; i++) {
             freq_letters[i] += freq_words[pos][i];
