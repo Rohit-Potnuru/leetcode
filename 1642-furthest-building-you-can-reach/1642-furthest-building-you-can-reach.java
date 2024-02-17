@@ -5,13 +5,13 @@ class Solution {
         for(int i = 1; i < n; i++) {
             int d = heights[i] - heights[i - 1];
             if(d > 0) {
-                priorityQueue.add(d);
-                while(priorityQueue.size() > ladders) {
-                    bricks -= priorityQueue.poll();
-                }
+                bricks -= d;
+                priorityQueue.add(-d);
             }
             if(bricks < 0) {
-                return i - 1;
+                bricks -= priorityQueue.poll();
+                if (ladders > 0) ladders--;
+                else return i - 1;
             }
         }
         return n - 1;
