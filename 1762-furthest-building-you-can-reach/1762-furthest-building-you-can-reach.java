@@ -1,30 +1,30 @@
-
+import java.util.PriorityQueue;
 
 class Solution {
-    public int furthestBuilding(int[] h, int b, int l) {
-        PriorityQueue<Integer> p = new PriorityQueue<>((a, b) -> b - a);
-        
-        int i = 0, diff = 0;
-        for (i = 0; i < h.length - 1; i++) {
-            diff = h[i + 1] - h[i];
-            
-            if (diff <= 0) {
-                continue;
-            }
-
-            b -= diff;
-            p.offer(diff);
-
-            if (b < 0) {
-                b += p.poll();
-                l--;
-            }
-
-            if (l < 0) {
-                break;
+    public int furthestBuilding(int[] heights, int bricks, int l) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a); // Max heap
+        int n = heights.length;
+        int i;
+        for (i = 0; i < n - 1; i++) {
+            int diff = heights[i + 1] - heights[i];
+            if (diff > 0) {
+                if (bricks >= diff) {
+                    bricks -= diff;
+                    pq.offer(diff);
+                } else if (l > 0) {
+                    if (!pq.isEmpty() && pq.peek() > diff) {
+                        int top = pq.poll();
+                        bricks += top - diff;
+                        pq.offer(diff);
+                        l--;
+                    } else {
+                        l--;
+                    }
+                } else {
+                    break;
+                }
             }
         }
-        
         return i;
     }
 }
