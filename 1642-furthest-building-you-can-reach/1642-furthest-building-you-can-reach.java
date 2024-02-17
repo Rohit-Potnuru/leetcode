@@ -6,9 +6,9 @@ class Solution {
             int d = heights[i] - heights[i - 1];
             if(d > 0) {
                 priorityQueue.add(d);
-            }
-            while(priorityQueue.size() > ladders) {
-                bricks -= priorityQueue.poll();
+                while(priorityQueue.size() > ladders) {
+                    bricks -= priorityQueue.poll();
+                }
             }
             if(bricks < 0) {
                 return i - 1;
