@@ -50,7 +50,6 @@ class Solution {
 
         int max = 0, maxRoom = 0;
         for(int i = 0; i < n; i++) {
-            System.out.println(rooms[i]);
             if(max < rooms[i]) {
                 maxRoom = i;
                 max = rooms[i];
