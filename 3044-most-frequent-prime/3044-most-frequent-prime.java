@@ -1,20 +1,21 @@
 class Solution {
     HashMap<Integer, Integer> primeFreq;
-    public static boolean isPrime(int num) {
-        // Check if number is less than 2, then it's not prime
-        if (num < 2) {
+    private static boolean isPrime(int n) {
+        if (n <= 1)
             return false;
-        }
-        // Check from 2 to the square root of num
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                return false; // num is divisible by some number other than 1 and itself
-            }
-        }
-        // num is prime
+ 
+        if (n == 2 || n == 3)
+            return true;
+ 
+        if (n % 2 == 0 || n % 3 == 0)
+            return false;
+ 
+        for (int i = 5; i <= Math.sqrt(n); i = i + 6)
+            if (n % i == 0 || n % (i + 2) == 0)
+                return false;
+ 
         return true;
     }
-    
     public int mostFrequentPrime(int[][] mat) {
         int m = mat.length, n = mat[0].length;
         int maxFreq = 0;
