@@ -1,59 +1,42 @@
+
+
 class Solution {
     public int mostBooked(int n, int[][] meetings) {
-        Arrays.sort(meetings, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] a, int[] b) {
-                return a[0] - b[0];
-            }
-        });
+        int[] ans = new int[n];
+        long[] times = new long[n];
+        Arrays.sort(meetings, (a, b) -> Integer.compare(a[0], b[0]));
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
-            @Override
-            public int compare(int[] a, int[] b) {
-                if(a[0] == b[0]) {
-                    return a[1] - b[1];
+        for (int i = 0; i < meetings.length; i++) {
+            int start = meetings[i][0], end = meetings[i][1];
+            boolean flag = false;
+            int minind = -1;
+            long val = Long.MAX_VALUE;
+            for (int j = 0; j < n; j++) {
+                if (times[j] < val) {
+                    val = times[j];
+                    minind = j;
                 }
-                return a[0] - b[0];
+                if (times[j] <= start) {
+                    flag = true;
+                    ans[j]++;
+                    times[j] = end;
+                    break;
+                }
             }
-        });
-
-        PriorityQueue<Integer> roomPQ = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer a, Integer b) {
-                return Integer.compare(a, b);
-            }
-        });
-
-        int[] rooms = new int[n], temp;
-        for(int i = 0; i < n; i++) roomPQ.add(i);
-        for(int[] meeting: meetings) {
-            while(!pq.isEmpty() && pq.peek()[0] <= meeting[0]) {
-                roomPQ.add(pq.poll()[1]);
-            }
-
-            if(!roomPQ.isEmpty()) {
-                int roomIndex = roomPQ.poll();
-                rooms[roomIndex]++;
-                temp = new int[]{meeting[1], roomIndex};
-                pq.add(temp);
-            }
-            else {
-                temp = pq.poll();
-                rooms[temp[1]]++;
-                temp[0] += meeting[1] - meeting[0];
-                pq.add(temp);
+            if (!flag) {
+                ans[minind]++;
+                times[minind] += (end - start);
             }
         }
 
-        int max = 0, maxRoom = 0;
-        for(int i = 0; i < n; i++) {
-            if(max < rooms[i]) {
-                maxRoom = i;
-                max = rooms[i];
+        int maxi = -1, id = -1;
+        for (int i = 0; i < n; i++) {
+            if (ans[i] > maxi) {
+                maxi = ans[i];
+                id = i;
             }
         }
-        return maxRoom;
+        return id;
     }
 }
-
 
