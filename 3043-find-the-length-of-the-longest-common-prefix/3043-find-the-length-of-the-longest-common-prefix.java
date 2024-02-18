@@ -1,9 +1,6 @@
 class Trie {
-    int total;
-    boolean end;
     Trie[] children;
     public Trie() {
-        this.end = false;
         this.children = new Trie[10];
     }
     
@@ -15,7 +12,6 @@ class Trie {
             }
             curr = curr.children[ch - '0'];
         }
-        curr.end = true;
     }
     
     public int search(String num) {
