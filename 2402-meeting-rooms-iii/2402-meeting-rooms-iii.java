@@ -3,9 +3,6 @@ class Solution {
         Arrays.sort(meetings, new Comparator<int[]>() {
             @Override
             public int compare(int[] a, int[] b) {
-                if(a[0] == b[0]) {
-                    return a[1] -  b[1];
-                }
                 return a[0] - b[0];
             }
         });
