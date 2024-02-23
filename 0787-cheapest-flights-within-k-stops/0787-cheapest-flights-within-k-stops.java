@@ -18,13 +18,12 @@ class Solution {
             int c = queue.size();
             while(c > 0) {
                 int[] curr = queue.poll();
-                cost[curr[0]] = Math.min(cost[curr[0]], curr[1]);
-                for(int i = 0; i < adjMap.get(curr[0]).size(); i++) {
-                    int node = adjMap.get(curr[0]).get(i)[0];
-                    int price = adjMap.get(curr[0]).get(i)[1];
-
-                    if(cost[node] <= curr[1] + price) continue;
-                    queue.add(new int[]{node, curr[1] + price});
+                int node = curr[0];
+                int distance = curr[1];
+                cost[node] = Math.min(cost[node], distance);
+                for(int[] next: adjMap.get(node)) {
+                    if(cost[next[0]] <= distance + next[1]) continue;
+                    queue.add(new int[]{next[0], distance + next[1]});
                 }
                 c--;
             } 
