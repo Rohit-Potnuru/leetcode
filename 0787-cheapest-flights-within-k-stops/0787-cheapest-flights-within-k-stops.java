@@ -1,35 +1,40 @@
+import java.util.*;
+
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        ArrayList<ArrayList<int[]>> adjMap = new ArrayList<>();
-        int[] cost = new int[n];
-        for(int i = 0; i < n; i++) {
-            adjMap.add(new ArrayList<>());
-            cost[i] = Integer.MAX_VALUE;
-        }
-        for(int i = 0; i < flights.length; i++) {
-            adjMap.get(flights[i][0]).add(new int[]{flights[i][1], flights[i][2]});
+        Map<Integer, List<int[]>> adj = new HashMap<>();
+        for (int[] flight : flights) {
+            adj.computeIfAbsent(flight[0], key -> new ArrayList<>()).add(new int[] {flight[1], flight[2]});
         }
 
-        Queue<int[]> queue = new LinkedList<>();
-        queue.add(new int[]{src, 0});
+        int[] dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
 
-        k++;
-        while(queue.size() > 0 && k >= 0) {
-            int c = queue.size();
-            while(c > 0) {
-                int[] curr = queue.poll();
+        Queue<int[]> q = new LinkedList<>();
+        q.offer(new int[] {src, 0});
+        int stops = 0;
+
+        while (!q.isEmpty() && stops <= k) {
+            int sz = q.size();
+            while (sz-- > 0) {
+                int[] curr = q.poll();
                 int node = curr[0];
                 int distance = curr[1];
-                cost[node] = Math.min(cost[node], distance);
-                for(int[] next: adjMap.get(node)) {
-                    if(cost[next[0]] <= distance + next[1]) continue;
-                    queue.add(new int[]{next[0], distance + next[1]});
+
+                if (!adj.containsKey(node)) continue;
+
+                for (int[] next : adj.get(node)) {
+                    int neighbour = next[0];
+                    int price = next[1];
+                    if (price + distance >= dist[neighbour]) continue;
+                    dist[neighbour] = price + distance;
+                    q.offer(new int[] {neighbour, dist[neighbour]});
                 }
-                c--;
-            } 
-            k--;
+            }
+            stops++;
         }
 
-        return cost[dst] == Integer.MAX_VALUE ? -1: cost[dst];
+        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
     }
 }
