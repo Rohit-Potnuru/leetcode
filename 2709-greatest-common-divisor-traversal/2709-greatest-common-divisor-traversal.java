@@ -43,6 +43,7 @@ class Solution {
                             previ = rj;
                         }
                         else if(previ != rj){
+                            count--;
                             union[previ] += union[rj];
                             union[rj] = previ;
                         }
@@ -51,10 +52,6 @@ class Solution {
             }
         }
 
-        int unCount = 0;
-        for(int i = 0; i < count; i++) {
-            if(union[i] < 0) unCount++;
-        }
-        return unCount == 1;
+        return count == 1;
     }
 }
