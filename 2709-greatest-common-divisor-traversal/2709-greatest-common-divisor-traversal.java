@@ -19,18 +19,16 @@ class Solution {
         int n = nums.length, count = 0, max = Integer.MIN_VALUE;
         if(n == 1) return true;
         HashMap<Integer, Integer> hashmap = new HashMap<>();
+
+        int[] union = new int[n];
         for(int i = 0; i < n; i++) {
             max = Math.max(max, nums[i]);
             if(!hashmap.containsKey(nums[i])) {
                 if(nums[i] == 1) return false;
                 hashmap.put(nums[i], count);
+                union[count] = -1;
                 count++;
             }
-        }
-
-        int[] union = new int[count];
-        for(int i = 0; i < count; i++) {
-            union[i] = -1;
         }
 
         boolean[] num_sys = new boolean[max + 1];
