@@ -44,6 +44,11 @@ class Solution {
                         }
                         else if(previ != rj){
                             count--;
+                            if(union[previ] > union[rj]) {
+                                previ += rj;
+                                rj = previ - rj;
+                                previ -= rj;
+                            }
                             union[previ] += union[rj];
                             union[rj] = previ;
                         }
