@@ -17,9 +17,7 @@ class Solution {
                 X = Math.min(xtj, xti) - Math.max(xlj, xli);
                 Y = Math.min(ytj, yti) - Math.max(ylj, yli);
                 
-                if(X > 0 && Y > 0) {
-                    max = Math.max(max, Math.min(X, Y));
-                }
+                max = Math.max(max, Math.min(X, Y));
             }
         }
         return max * max;
