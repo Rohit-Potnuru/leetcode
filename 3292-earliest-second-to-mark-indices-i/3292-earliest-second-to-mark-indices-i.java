@@ -10,8 +10,8 @@ class Solution {
         int count = 0;
         for(int i = 0; i < pos; i++) {
             if(i == lastIndices.get(changeIndices[i])) {
-                if(count < nums[changeIndices[i]]) return false;
-                else count -= nums[changeIndices[i]];
+                if(count < nums[changeIndices[i] - 1]) return false;
+                else count -= nums[changeIndices[i] - 1];
             }
             else {
                 count++;
@@ -22,9 +22,6 @@ class Solution {
 
     public int earliestSecondToMarkIndices(int[] nums, int[] changeIndices) {
         int cin = changeIndices.length;
-        for(int i = 0; i < cin; i++) {
-            changeIndices[i]--;
-        }
 
         int min = -1;
 
