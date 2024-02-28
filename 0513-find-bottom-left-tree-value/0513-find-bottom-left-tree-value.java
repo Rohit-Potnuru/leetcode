@@ -16,17 +16,16 @@
 class Solution {
     public int findBottomLeftValue(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
-        TreeNode curr = root;
         q.add(root);
         while(!q.isEmpty()) {
-            curr = q.remove();
-            if(curr.right != null) {
-                q.add(curr.right);
+            root = q.remove();
+            if(root.right != null) {
+                q.add(root.right);
             }
-            if(curr.left != null) {
-                q.add(curr.left);
+            if(root.left != null) {
+                q.add(root.left);
             }
         }
-        return curr.val;
+        return root.val;
     }
 }
