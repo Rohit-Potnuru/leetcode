@@ -1,15 +1,18 @@
 class Solution {
     public String maximumOddBinaryNumber(String s) {
-        char[] res = s.toCharArray();
-        int ind = -1; // will not consider first bit because we will add this to last
-        for(int i=0;i<res.length;i++) {
-            if(res[i] == '1') {
-                if(ind != -1) res[ind++] = '1';
-                else ind++;
-                res[i] = '0'; // reset current
+        int ones = -1, curr = 0, n = s.length();
+        char[] st = new char[n];
+        for(char ch: s.toCharArray()) {
+            if(ch - '0' == 1) {
+                if(ones == -1) ones++;
+                else st[ones++] = '1';
             }
-            if(i == res.length-1) res[i] = '1'; // set last bit
+            st[curr++] = '0';
         }
-        return new String(res);
+
+        st[n - 1] = '1';
+
+        return new String(st);
     }
 }
+
