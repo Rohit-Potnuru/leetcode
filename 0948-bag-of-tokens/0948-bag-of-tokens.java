@@ -7,6 +7,7 @@ class Solution {
             if(power >= tokens[start]) {
                 power -= tokens[start++];
                 score++;
+                maxScore = Math.max(maxScore, score);
             }
             else if(score > 0) {
                 power += tokens[end--];
@@ -15,7 +16,6 @@ class Solution {
             else {
                 break;
             }
-            maxScore = Math.max(maxScore, score);
         }
         return maxScore;
     }
