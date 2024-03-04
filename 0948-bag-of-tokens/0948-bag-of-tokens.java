@@ -8,9 +8,12 @@ class Solution {
                 power -= tokens[start++];
                 score++;
             }
-            else {
+            else if(score > 0) {
                 power += tokens[end--];
                 score--;
+            }
+            else {
+                break;
             }
             maxScore = Math.max(maxScore, score);
         }
