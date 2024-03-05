@@ -3,6 +3,7 @@ class Solution {
         int m = grid.length, n = grid[0].length;
         int count = 0;
         if(grid[0][0] <= k) count++;
+        else return 0;
         for(int i = 1; i < m; i++) {
             grid[i][0] += grid[i - 1][0];
             if(grid[i][0] <= k) count++;
