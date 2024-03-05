@@ -15,6 +15,7 @@ class Solution {
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
                 if(grid[i][j] <= k) count++;
+                else break;
             }
         }
         return count;
