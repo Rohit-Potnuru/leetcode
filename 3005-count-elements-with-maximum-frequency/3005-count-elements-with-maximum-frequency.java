@@ -5,11 +5,12 @@ class Solution {
         int[] freq = new int[101];
         for(int num: nums) {
             freq[num] += 1;
-            if(freq[num] >= maxCount) {
-                totalElement = (freq[num] > maxCount) ?  freq[num] : totalElement + freq[num];
+            if(freq[num] > maxCount) {
+                totalElement = 0;
                 maxCount = freq[num];
             }
+            if(freq[num] == maxCount) totalElement++;
         }
-        return totalElement;
+        return totalElement * maxCount;
     }
 }
