@@ -2,15 +2,15 @@ class Solution {
     public int maxFrequencyElements(int[] nums) {
         int maxCount = 0;
         int totalElement = 0;
-        HashMap<Integer, Integer> hashmap = new HashMap<>();
+        int[] freq = new int[101];
         for(int num: nums) {
-            hashmap.put(num, hashmap.getOrDefault(num, 0) + 1);
-            if(maxCount < hashmap.get(num)) {
-                maxCount = hashmap.get(num);
-                totalElement = 0;
+            freq[num] += 1;
+            if(freq[num] > maxCount) {
+                maxCount = freq[num];
+                totalElement = maxCount;
             }
-            if(maxCount == hashmap.get(num)) {
-                totalElement += hashmap.get(num);
+            else if(freq[num] == maxCount) {
+                totalElement += maxCount;
             }
         }
         return totalElement;
