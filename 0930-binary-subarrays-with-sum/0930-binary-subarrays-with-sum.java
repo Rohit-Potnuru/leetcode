@@ -5,9 +5,7 @@ class Solution {
         prefixSum[0] = 1;
         for(int num: nums) {
             currSum += num;
-            if(currSum >= goal) {
-                ans += prefixSum[currSum - goal];
-            }
+            ans += (currSum >= goal)? prefixSum[currSum - goal] : 0;
             prefixSum[currSum]++;
         }
         return ans;
