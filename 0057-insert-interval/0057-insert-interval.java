@@ -16,11 +16,12 @@ class Solution {
                 ans.get(size)[0] = Math.min(intervals[i][0], ans.get(size)[0]);
                 ans.get(size)[1] = Math.max(intervals[i][1], ans.get(size)[1]);
             }
-            else {
-                ans.add(intervals[i]);
-                size++;
-            }
+            else {break;}
             i++;
+        }
+        while(i < n) {
+            ans.add(intervals[i++]);
+            size++;
         }
         return ans.toArray(new int[size + 1][]);
     }
