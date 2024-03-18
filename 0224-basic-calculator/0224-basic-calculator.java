@@ -2,39 +2,31 @@ class Solution {
     public int calculate(String s) {
         int n = s.length();
         Stack<Integer> st = new Stack<>();
-        Stack<Integer> signSt = new Stack<>();
-        st.push(0);
-        signSt.push(1);
         int i = 0;
-        int val, sign = 1;
+        int number = 0, sign = 1, result = 0;
         while(i < n) {
-            if(s.charAt(i) == ' ') {
-
-            }
-            else if(s.charAt(i) == '+' || s.charAt(i) == '-') {
+            if(s.charAt(i) == '+' || s.charAt(i) == '-') {
+                result += sign * number;
+                number = 0;
                 sign = (s.charAt(i) == '-') ? -1: 1;
             }
             else if(s.charAt(i) == '(') {
-                st.push(0);
-                signSt.push(sign);
+                st.push(result);
+                st.push(sign);
+                result = 0; 
                 sign = 1;
             }
             else if(s.charAt(i) == ')') {
-                st.push(st.pop() * signSt.pop() + st.pop());
+                result += sign * number;
+                number = 0;
+                result *= st.pop();
+                result += st.pop();
             }
-            else {
-                val = 0;
-                while(i < n && (s.charAt(i) == ' ' || Character.isDigit(s.charAt(i)))) {
-                    if(s.charAt(i) != ' ') {
-                        val = val * 10 + (s.charAt(i) - '0');
-                    }
-                    i++;
-                }
-                st.push(st.pop() + val * sign);
-                i--;
+            else if(Character.isDigit(s.charAt(i))){
+                number = number * 10 + (s.charAt(i) - '0');
             }
             i++;
         }
-        return st.pop() * signSt.pop();
+        return result + sign * number;
     }
 }
