@@ -5,7 +5,6 @@ class Solution {
         int i = 0;
         int number = 0, sign = 1, result = 0;
         while(i < n) {
-            if(s.charAt(i) == ' ') {}
             else if(Character.isDigit(s.charAt(i))){
                 number = number * 10 + (s.charAt(i) - '0');
             }
