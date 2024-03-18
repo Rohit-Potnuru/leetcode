@@ -12,13 +12,13 @@ class Solution {
                 sign = (s.charAt(i) == '-') ? -1: 1;
                 i++;
             }
-            if(s.charAt(i) == '(') {
+            else if(s.charAt(i) == '(') {
                 st.push(0);
                 signSt.push(sign);
                 sign = 1;
                 i++;
             }
-            if(s.charAt(i) == ')') {
+            else if(s.charAt(i) == ')') {
                 st.push(st.pop() * signSt.pop() + st.pop());
                 i++;
             }
