@@ -7,17 +7,18 @@ class Solution {
 
         char temp = board[posx][posy];
         board[posx][posy] = '.';
-        boolean flag = false;
         for(int[] neighbor : directions) {
             int dx = posx + neighbor[0];
             int dy = posy + neighbor[1];
 
             if(0 <= dx && dx < m && 0 <= dy && dy < n) {
-                flag |= dfs(board, word, wordPos + 1, dx, dy);
+                if(dfs(board, word, wordPos + 1, dx, dy)) {
+                    return true;
+                }
             }
         }
         board[posx][posy] = temp;
-        return flag;
+        return false;
     }
 
     public boolean exist(char[][] board, String word) {
