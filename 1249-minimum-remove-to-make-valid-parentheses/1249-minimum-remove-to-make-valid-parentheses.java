@@ -4,18 +4,13 @@ class Solution {
         int count = 0;
         for(char ch: s.toCharArray()) {
             if(ch == ')') {
+                if(count == 0) continue;
                 count--;
             }
             else if(ch == '(') {
                 count++;
             }
-
-            if(count >= 0) {
-                stack.push(ch);
-            }
-            else {
-                count = 0;
-            }
+            stack.push(ch);
         }
 
         StringBuilder st = new StringBuilder();
