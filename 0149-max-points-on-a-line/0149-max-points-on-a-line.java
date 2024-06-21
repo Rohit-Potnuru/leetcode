@@ -23,7 +23,6 @@ class Solution {
                 if(!lineMap.get(slope).containsKey(intercept)) {
                     lineMap.get(slope).put(intercept, new int[]{i, 0});
                 }
-                System.out.println(slope + " " + intercept);
                 if(lineMap.get(slope).get(intercept)[0] == i) {
                     int[] temp = lineMap.get(slope).get(intercept);
                     temp[1]++;
