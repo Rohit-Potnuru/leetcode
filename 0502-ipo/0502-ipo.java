@@ -28,8 +28,7 @@ class Solution {
             if(profitPQ.isEmpty()) {
                 break;
             }
-            int temp = profitPQ.poll();
-            w -= temp;
+            w -= profitPQ.poll();
             k--;
         }
         return w;
