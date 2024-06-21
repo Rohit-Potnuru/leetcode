@@ -3,14 +3,14 @@ class Solution {
         Float slope = (float)Integer.MAX_VALUE, intercept;
         if(p1[0] != p2[0]) {
             slope = (float)(p1[1] - p2[1])/(float)(p1[0] - p2[0]);
+            slope = (Math.abs(slope) == 0) ? 0 : slope;
         }
+
         intercept = (float)(p1[1]) - slope * ((float)p1[0]);
         return new Float[]{slope, intercept};
     }
 
     public int maxPoints(int[][] points) {
-        Arrays.sort(points, (a, b) -> Integer.compare(a[0], b[0]));
-
         HashMap<Float, HashMap<Float, int[]>> lineMap = new HashMap<>();
         int n = points.length, maxPoints = 0;
         for(int i = 0; i < n; i++) {
@@ -23,6 +23,7 @@ class Solution {
                 if(!lineMap.get(slope).containsKey(intercept)) {
                     lineMap.get(slope).put(intercept, new int[]{i, 0});
                 }
+                System.out.println(slope + " " + intercept);
                 if(lineMap.get(slope).get(intercept)[0] == i) {
                     int[] temp = lineMap.get(slope).get(intercept);
                     temp[1]++;
