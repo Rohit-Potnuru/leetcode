@@ -12,16 +12,10 @@ class Solution {
             }
 
             // nextEvenCount
-            int nextEvenCount = 0;
+            int nextEvenCount = (oddCount < k) ? -1: 0;
             while(curr < n && nums[curr] % 2 != 1) {
                 nextEvenCount++;
                 curr++;
-            }
-            if(oddCount < k) {
-                nextEvenCount = -1;
-            }
-            if(oddCount < k) {
-                nextEvenCount = -1;
             }
             
             // prevEvenCount
