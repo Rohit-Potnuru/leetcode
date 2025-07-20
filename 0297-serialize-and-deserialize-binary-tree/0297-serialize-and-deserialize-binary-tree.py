@@ -14,19 +14,18 @@ class Codec:
         :rtype: str
         """
         if not root: return "null"
-        print("Hello",root)
-        queue = deque(root)
-        serialize = ""
+        queue = deque([root])
+        serialize = []
         while len(queue) > 0:
-            print(queue)
-            node = queue.pop(0) 
-            if node:
-                serialize += "null,"
-                continue
-            serialize += f'{node.val},'
-            queue.append(node.left)
-            queue.append(node.right)
-        return serialize[:-1]
+            node = queue.popleft() 
+            if not node:
+                serialize.append("null")
+            else:
+                serialize.append(str(node.val))
+                queue.append(node.left)
+                queue.append(node.right)
+        print(serialize)
+        return ",".join(serialize)
 
     def deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -34,8 +33,8 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
+        if data == "null": return None
         nodes = data.split(",")
-        print(nodes)
         curr = TreeNode(nodes[0])
         queue = [curr]
         i, n = 1, len(nodes)
