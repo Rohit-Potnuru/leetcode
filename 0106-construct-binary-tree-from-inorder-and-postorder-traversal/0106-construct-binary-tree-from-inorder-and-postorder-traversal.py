@@ -11,18 +11,18 @@ class Solution:
             inorder_idx[node] = idx
         
         root = TreeNode(postorder[-1])
-        stack = deque()
-        stack.append(root)
+        stack = [root]
 
         for node in reversed(postorder[:-1]):
-            currIdx, currNode = inorder_idx[node], TreeNode(node)
-            topNode = stack[-1]
-            if inorder_idx[topNode.val] < currIdx:
-                topNode.right = currNode
+            curr_idx = inorder_idx[node]
+            curr_node = TreeNode(node)
+            
+            if inorder_idx[stack[-1].val] < curr_idx:
+                stack[-1].right = curr_node
             else:
-                prevTopNode = stack[-1]
-                while len(stack) != 0 and inorder_idx[stack[-1].val] > currIdx:
-                    prevTopNode = stack.pop()
-                prevTopNode.left = currNode
-            stack.append(currNode)
+                parent = None
+                while stack and inorder_idx[stack[-1].val] > curr_idx:
+                    parent = stack.pop()
+                parent.left = curr_node
+            stack.append(curr_node)
         return root
