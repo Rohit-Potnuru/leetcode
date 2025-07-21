@@ -6,9 +6,7 @@
 #         self.right = right
 class Solution:
     def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
-        inorder_idx = dict()
-        for idx, node in enumerate(inorder):
-            inorder_idx[node] = idx
+         inorder_idx = {val: idx for idx, val in enumerate(inorder)}
         
         root = TreeNode(postorder[-1])
         stack = [root]
