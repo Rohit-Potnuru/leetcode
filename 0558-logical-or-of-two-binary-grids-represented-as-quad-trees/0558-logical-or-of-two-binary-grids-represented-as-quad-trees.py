@@ -27,8 +27,7 @@ class Solution(object):
             topRight = self.intersect(quadTree1.topRight, quadTree2.topRight)
             bottomLeft = self.intersect(quadTree1.bottomLeft, quadTree2.bottomLeft)
             bottomRight = self.intersect(quadTree1.bottomRight, quadTree2.bottomRight)
-            leafVal = topLeft.val == topRight.val == bottomLeft.val == bottomRight.val
-            isLeafVal = topLeft.isLeaf and topRight.isLeaf and bottomLeft.isLeaf and bottomRight.isLeaf
-            if leafVal and isLeafVal:
+            if topLeft.isLeaf and topRight.isLeaf and bottomLeft.isLeaf and bottomRight.isLeaf and topLeft.val == topRight.val == bottomLeft.val == bottomRight.val:
                 return Node(topLeft.val, True)
-            return Node(quadTree1.val or quadTree2.val, False, topLeft, topRight, bottomLeft, bottomRight) 
+            else:
+                return Node(quadTree1.val or quadTree2.val, False, topLeft, topRight, bottomLeft, bottomRight) 
