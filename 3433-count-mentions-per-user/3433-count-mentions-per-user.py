@@ -8,8 +8,8 @@ class Solution(object):
         mentions = [0] * numberOfUsers
         offline = [0] * numberOfUsers
         allCount = 0
-        events = sorted(events, key = lambda event: (int(event[1]), event[0] != "OFFLINE"))
-        print(events)
+        events = sorted(events, key = lambda event: (int(event[1]), event[0]  == "MESSAGE"))
+
         for event in events:
             [status, timestamp, mString] = event
 
