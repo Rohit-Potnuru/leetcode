@@ -31,7 +31,6 @@ class Solution(object):
                 if i == n:
                     break
                 totalCount *= i - previ + 1
-                print(i, i - previ + 1)
         if totChairCount != 0 and totChairCount % 2 == 0:
             return int(totalCount % MODULO)
         return 0
