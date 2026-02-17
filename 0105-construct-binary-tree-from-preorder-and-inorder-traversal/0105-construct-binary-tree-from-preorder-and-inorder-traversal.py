@@ -22,8 +22,8 @@ class Solution:
             else:
                 prevPop = None
                 while idx > stack[-1][1]:
-                    prevPop = stack.pop()[0]
-                prevPop.right = node
+                    prevPop = stack.pop()
+                prevPop[0].right = node
             
             stack.append([node, idx])
         return root.left
