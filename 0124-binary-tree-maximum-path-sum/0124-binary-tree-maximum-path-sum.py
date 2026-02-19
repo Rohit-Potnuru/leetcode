@@ -10,7 +10,7 @@ class Solution:
             return 0
         left = self.getMaxPathSum(root.left)
         right = self.getMaxPathSum(root.right)
-        maxChildSum = max(root.val, root.val + max(left, right))
+        maxChildSum = max(root.val, root.val + left, root.val + right)
         self.max = max(self.max, maxChildSum, root.val + left + right)
 
         return maxChildSum
