@@ -22,7 +22,7 @@ class Solution:
                     predecessor.right = None
                     count += 1
                     if count == k:
-                        kNode = curr.val
+                        return curr.val
                     curr = curr.right
                 else:
                     predecessor.right = curr
@@ -30,6 +30,6 @@ class Solution:
             else: 
                 count += 1
                 if count == k:
-                    kNode = curr.val
+                    return curr.val
                 curr = curr.right
         return kNode
