@@ -31,5 +31,4 @@ class Solution:
                 minDiff = min(minDiff, abs(prev - curr.val))
                 prev = curr.val
                 curr = curr.right
-        print(minDiff)
         return minDiff
