@@ -13,23 +13,22 @@ class Solution:
 
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         curr = root
-        count = 0
         kNode = None
         while curr:
             if curr.left:
                 predecessor = self.getPredecessor(curr)
                 if predecessor.right == curr:
                     predecessor.right = None
-                    count += 1
-                    if count == k:
+                    k -= 1
+                    if k == 0:
                         return curr.val
                     curr = curr.right
                 else:
                     predecessor.right = curr
                     curr = curr.left
             else: 
-                count += 1
-                if count == k:
+                k -= 1
+                if k == 0:
                     return curr.val
                 curr = curr.right
         return kNode
