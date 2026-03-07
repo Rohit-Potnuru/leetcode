@@ -1,60 +1,36 @@
-class Trie(object):
+class Trie:
 
     def __init__(self):
-        self.isEnd = False
-        self.children = dict() #[None] * 26
+        self.children = [None] * 26
+        self.end = False
 
-    def insert(self, word):
-        """
-        :type word: str
-        :rtype: None
-        
-        don
-        root
-         d
-         o
-         n
-        """
+    def insert(self, word: str) -> None:
         curr = self
         for ch in word:
-            if ch not in curr.children:
-                curr.children[ch] = Trie()
-            curr = curr.children[ch]
-            
-            # i = ord(ch) - ord('a')
-            # if(self.children[i] == None) :
-            #     self.children[i] = Trie()
-        curr.isEnd = True
+            idx = ord(ch) - ord('a')
+            if curr.children[idx] is None:
+                curr.children[idx] = Trie()
+            curr = curr.children[idx]
+        curr.end = True
 
-    def search(self, word):
-        """
-        :type word: str
-        :rtype: bool
-        don
-        """
+    def search(self, word: str) -> bool:
         curr = self
         for ch in word:
-            if ch not in curr.children:
+            idx = ord(ch) - ord('a')
+            if curr.children[idx] is None:
                 return False
-            curr = curr.children[ch]
-        return curr.isEnd
+            curr = curr.children[idx]
+        return curr.end
 
-    def startsWith(self, prefix):
-        """
-        :type prefix: str
-        :rtype: bool
-        do
-        """
+    def startsWith(self, prefix: str) -> bool:
         curr = self
         for ch in prefix:
-            if ch not in curr.children:
+            idx = ord(ch) - ord('a')
+            if curr.children[idx] == None:
                 return False
-            curr = curr.children[ch]
+            curr = curr.children[idx]
         return True
         
-        
-
-
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
 # obj.insert(word)
