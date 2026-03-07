@@ -26,7 +26,7 @@ class Trie:
         curr = self
         for ch in prefix:
             idx = ord(ch) - ord('a')
-            if curr.children[idx] == None:
+            if curr.children[idx] is None:
                 return False
             curr = curr.children[idx]
         return True
