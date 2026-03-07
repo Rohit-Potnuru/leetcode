@@ -13,12 +13,13 @@ class WordDictionary:
             curr = curr.children[idx]
         curr.end = True
 
-    def search(self, word: str) -> bool:
+    def search(self, word: str, pos: int = 0) -> bool:
         curr = self
-        for idx, ch in enumerate(word):
+        for i in range(pos, len(word)):
+            ch = word[i]
             if ch == ".":
                 for child in curr.children:
-                    if child and child.search(word[idx + 1:]):
+                    if child and child.search(word, i + 1):
                         return True
                 return False
             else:
