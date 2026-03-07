@@ -28,13 +28,20 @@ I am pushing all of my leet code solved problems to this repository
 | ------- | ------- |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 <!---LeetCode Topics End-->
