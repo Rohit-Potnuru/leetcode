@@ -2,6 +2,9 @@ class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         q = deque()
         wordListSet = set(wordList)
+        if endWord not in wordListSet:
+            return 0
+            
         visited = set()
         q.append(beginWord)
         visited.add(beginWord)
