@@ -51,5 +51,6 @@ I am pushing all of my leet code solved problems to this repository
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0077-combinations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0077-combinations/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 <!---LeetCode Topics End-->
