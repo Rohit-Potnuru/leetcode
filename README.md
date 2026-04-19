@@ -55,6 +55,7 @@ I am pushing all of my leet code solved problems to this repository
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0046-permutations/) | Medium |
+| [0052-n-queens-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0052-n-queens-ii/) | Hard |
 | [0077-combinations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0077-combinations/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 <!---LeetCode Topics End-->
