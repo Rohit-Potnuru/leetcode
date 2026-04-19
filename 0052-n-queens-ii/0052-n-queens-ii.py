@@ -20,7 +20,7 @@ class Solution:
                         vertical.add(j)
                         diagLeftRight.add(i - j)
                         diagRightLeft.add(i + j - n)
-                        backTrack(i, j + 1, t - 1)
+                        backTrack(i + 1, 0, t - 1)
                         horizontal.remove(i)
                         vertical.remove(j)
                         diagLeftRight.remove(i - j)
