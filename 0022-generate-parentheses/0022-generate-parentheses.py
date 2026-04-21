@@ -1,20 +1,12 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        if not hasattr(self, 'memo'):
-            self.memo = {}
-        if n == 1:
-            return ["()"]
-        elif n in self.memo:
-            return self.memo[n]
-        else:
-            res = set()
-            for i in range(1, n):
-                leftList = self.generateParenthesis(i)
-                rightList = self.generateParenthesis(n - i)
-                for rightPranthesis in rightList:
-                    for leftPranthesis in leftList:
-                        res.add(leftPranthesis + rightPranthesis)
-                    if i == 1:
-                        res.add('(' + rightPranthesis + ')')
-            self.memo[n] = list(res)
-            return self.memo[n]
+        def backTrack(left: int, right: int, s: str):
+            if len(s) == 2 * n:
+                res.append(s)
+            if left < n:
+                backTrack(left + 1, right, s + '(')
+            if right < left:
+                backTrack(left, right + 1, s + ')')
+        res = []
+        backTrack(0, 0, '')
+        return res
