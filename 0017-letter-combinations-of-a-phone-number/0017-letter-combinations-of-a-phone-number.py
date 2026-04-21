@@ -12,10 +12,13 @@ class Solution:
         }
         def backTrack(pos: int, s: str):
             if pos == len(digits):
-                res.append(s)
+                res.append("".join(temp))
                 return
             for ch in keyPad[digits[pos]]:
-                backTrack(pos + 1, s + str(ch))
+                temp.append(ch)
+                backTrack(pos + 1, temp)
+                temp.pop()
         res = []
-        backTrack(0, "")
+        temp = []
+        backTrack(0, temp)
         return res
