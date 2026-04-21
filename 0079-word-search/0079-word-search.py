@@ -1,9 +1,7 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         def backTrack(x: int, y: int, pos: int):
-            if board[x][y] != word[pos]:
-                return False
-            if pos == len(word) - 1:
+            if board[x][y] != word[pos] or pos == len(word) - 1:
                 return board[x][y] == word[pos]
 
             temp = board[x][y]
