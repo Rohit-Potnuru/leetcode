@@ -26,12 +26,14 @@ I am pushing all of my leet code solved problems to this repository
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Rohit-Potnuru/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Rohit-Potnuru/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0022-generate-parentheses](https://github.com/Rohit-Potnuru/leetcode/tree/main/0022-generate-parentheses/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
@@ -58,6 +60,7 @@ I am pushing all of my leet code solved problems to this repository
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Rohit-Potnuru/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0022-generate-parentheses](https://github.com/Rohit-Potnuru/leetcode/tree/main/0022-generate-parentheses/) | Medium |
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0046-permutations/) | Medium |
