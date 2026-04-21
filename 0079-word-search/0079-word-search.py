@@ -11,16 +11,14 @@ class Solution:
                 new_x = x + dx
                 new_y = y + dy
                 if 0 <= new_x < n and 0 <= new_y < m:
-                    ans = backTrack(new_x, new_y, pos + 1) or ans
-                if ans:
-                    break
+                    ans = ans or backTrack(new_x, new_y, pos + 1)
             board[x][y] = temp
             return ans
+
         n = len(board)
         m = len(board[0])
         for i in range(n):
             for j in range(m):
-                ans = backTrack(i, j, 0)
-                if ans:
+                if backTrack(i, j, 0):
                     return True
         return False
