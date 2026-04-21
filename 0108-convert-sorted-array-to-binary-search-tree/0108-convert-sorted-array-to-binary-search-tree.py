@@ -9,7 +9,6 @@ class Solution:
         def merge(left: int, right: int):
             if right <= left:
                 return None
-            print(left, right)
             mid = (right - left)//2 + left
             root = TreeNode(nums[mid])
             root.left = merge(left, mid)
