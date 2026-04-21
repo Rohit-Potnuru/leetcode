@@ -9,6 +9,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0046-permutations/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
 ## Breadth-First Search
@@ -72,4 +73,20 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/Rohit-Potnuru/leetcode/tree/main/0022-generate-parentheses/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
+## Binary Search Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 <!---LeetCode Topics End-->
