@@ -9,6 +9,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0001-two-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0046-permutations/) | Medium |
+| [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
@@ -30,6 +31,7 @@ I am pushing all of my leet code solved problems to this repository
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rohit-Potnuru/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
+| [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
@@ -38,6 +40,7 @@ I am pushing all of my leet code solved problems to this repository
 | ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rohit-Potnuru/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0022-generate-parentheses](https://github.com/Rohit-Potnuru/leetcode/tree/main/0022-generate-parentheses/) | Medium |
+| [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
@@ -91,4 +94,8 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 <!---LeetCode Topics End-->
