@@ -13,6 +13,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -34,6 +35,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 ## String
 | Problem Name | Difficulty |
@@ -82,6 +84,7 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -98,4 +101,21 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Bucket Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Quickselect
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 <!---LeetCode Topics End-->
