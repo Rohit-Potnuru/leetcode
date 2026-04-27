@@ -2,15 +2,15 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagramMap = dict()
         for word in strs:
-            sortedWord = "".join(sorted(word))
-            if sortedWord not in anagramMap:
-                anagramMap[sortedWord] = []
-            anagramMap[sortedWord].append(word)
+            count = [0] * 26
+            for ch in word:
+                count[ord(ch) - ord('a')] += 1
+            count = tuple(count)
+            if count not in anagramMap:
+                anagramMap[count] = []
+            anagramMap[count].append(word)
         
-        result = []
-        for sortedWord in anagramMap:
-            result.append(anagramMap[sortedWord])
-        return result
+        return list(anagramMap.values())
 
  
 #  """
