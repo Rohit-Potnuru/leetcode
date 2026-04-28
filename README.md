@@ -7,6 +7,7 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0001-two-sum/) | Easy |
+| [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 | [0036-valid-sudoku](https://github.com/Rohit-Potnuru/leetcode/tree/main/0036-valid-sudoku/) | Medium |
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
@@ -154,5 +155,10 @@ I am pushing all of my leet code solved problems to this repository
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
 <!---LeetCode Topics End-->
