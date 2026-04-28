@@ -7,6 +7,7 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0001-two-sum/) | Easy |
+| [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 | [0036-valid-sudoku](https://github.com/Rohit-Potnuru/leetcode/tree/main/0036-valid-sudoku/) | Medium |
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0046-permutations/) | Medium |
@@ -116,6 +117,7 @@ I am pushing all of my leet code solved problems to this repository
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 | [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 ## Heap (Priority Queue)
@@ -149,4 +151,8 @@ I am pushing all of my leet code solved problems to this repository
 | [0003-longest-substring-without-repeating-characters](https://github.com/Rohit-Potnuru/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/Rohit-Potnuru/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0219-contains-duplicate-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0219-contains-duplicate-ii/) | Easy |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 <!---LeetCode Topics End-->
