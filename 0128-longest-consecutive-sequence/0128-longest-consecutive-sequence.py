@@ -1,42 +1,14 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        parent = dict()
-        size = dict()
-        def find(curr):
-            if curr not in parent:
-                return None
-            if parent[curr] != curr:
-                parent[curr] = find(parent[curr])
-            return parent[curr]
-        
-        def union(a, b):
-            ra, rb = find(a), find(b)
-            if ra == rb:
-                return size[ra]
-            if size[ra] < size[rb]:
-                ra, rb = rb, ra
-            parent[rb] = ra
-            size[ra] += size[rb]
-            return size[ra]
-            
-        maxx = 0
-        for num in nums:
-            left = find(num - 1)
-            right = find(num + 1)
-            if num in parent:
-                continue
-            parent[num] = num
-            size[num] = 1
-            count = 1
-            if left is not None and right is not None:
-                union(num, left)
-                count = union(right, num)
-            elif right is not None:
-                count = union(right, num)
-            elif left is not None:
-                count = union(left, num)
-            maxx = max(count, maxx)
-        return maxx
+        num_set = set(nums)
+        longest = 0
+        for n in num_set:
+            if n - 1 not in num_set:
+                inc = 1
+                while n + inc in num_set:
+                    inc += 1
+                longest = max(longest, inc)
+        return longest
 
 '''
 brute force:
