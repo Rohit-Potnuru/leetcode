@@ -4,8 +4,7 @@ class Solution:
         maxx = 0
         for price in prices:
             maxx = max(maxx, price - low)
-            if price < low:
-                low = price
+            low = min(low, price)
         return maxx
 '''
 
