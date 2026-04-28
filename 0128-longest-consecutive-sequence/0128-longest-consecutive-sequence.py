@@ -1,44 +1,40 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        groupMap = dict()
-        def find(val):
-            if val not in groupMap:
+        parent = dict()
+        size = dict()
+        def find(curr):
+            if curr not in parent:
                 return None
-            curr = val
-            while curr in groupMap and groupMap[curr][0]:
-                curr = groupMap[curr][1]
-            parent = curr
-
-            # curr = val
-            # while groupMap[curr] >= 0:
-            #     curr, groupMap[curr] = groupMap[curr], parent
-            return parent
+            if parent[curr] != curr:
+                parent[curr] = find(parent[curr])
+            return parent[curr]
         
-        def union(g1, g2):
-            count1 = groupMap[g1][1]
-            count2 = groupMap[g2][1]
-            if count1 < count2:
-                groupMap[g1] = (True, g2)
-                groupMap[g2] = (False, count1 + count2)
-            else: 
-                groupMap[g2] = (True, g1)
-                groupMap[g1] = (False, count1 + count2)
-            return count1 + count2
+        def union(a, b):
+            ra, rb = find(a), find(b)
+            if ra == rb:
+                return size[ra]
+            if size[ra] < size[rb]:
+                ra, rb = rb, ra
+            parent[rb] = ra
+            size[ra] += size[rb]
+            return size[ra]
+            
         maxx = 0
         for num in nums:
-            leftGroup = find(num - 1)
-            rightGroup = find(num + 1)
-            if num in groupMap:
+            left = find(num - 1)
+            right = find(num + 1)
+            if num in parent:
                 continue
-            groupMap[num] = (False, 1)
+            parent[num] = num
+            size[num] = 1
             count = 1
-            if leftGroup != None and rightGroup != None:
-                union(leftGroup, num)
-                count = union(rightGroup, leftGroup)
-            elif rightGroup != None:
-                count = union(rightGroup, num)
-            elif leftGroup != None:
-                count = union(leftGroup, num)
+            if left is not None and right is not None:
+                union(num, left)
+                count = union(right, num)
+            elif right is not None:
+                count = union(right, num)
+            elif left is not None:
+                count = union(left, num)
             maxx = max(count, maxx)
         return maxx
 
