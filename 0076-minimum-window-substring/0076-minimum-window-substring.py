@@ -11,8 +11,8 @@ class Solution:
         sFreq = defaultdict(int)
         sCount = 0
         i = 0
-        minn = float('inf')
-        minString = ""
+        minLen = float('inf')
+        minStart = 0
         for j, ch in enumerate(s):
             sFreq[ch] += 1
             if sFreq[ch] == tFreq[ch]:
@@ -21,8 +21,7 @@ class Solution:
                 sFreq[s[i]] -= 1
                 if sFreq[s[i]] < tFreq[s[i]]:
                     sCount -= 1
-                if minn > j - i + 1:
-                    minString = s[i: j + 1]
-                    minn = j - i + 1
+                if minLen > j - i + 1:
+                    minStart, minLen = i, j - i + 1
                 i += 1
-        return minString
+        return s[minStart: minStart + minLen] if minLen != float('inf') else ""
