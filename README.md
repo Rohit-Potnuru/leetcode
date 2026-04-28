@@ -11,6 +11,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 | [0036-valid-sudoku](https://github.com/Rohit-Potnuru/leetcode/tree/main/0036-valid-sudoku/) | Medium |
 | [0039-combination-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0039-combination-sum/) | Medium |
+| [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0046-permutations](https://github.com/Rohit-Potnuru/leetcode/tree/main/0046-permutations/) | Medium |
 | [0049-group-anagrams](https://github.com/Rohit-Potnuru/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
@@ -97,6 +98,7 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/Rohit-Potnuru/leetcode/tree/main/0022-generate-parentheses/) | Medium |
+| [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rohit-Potnuru/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -157,8 +159,17 @@ I am pushing all of my leet code solved problems to this repository
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
+| [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 <!---LeetCode Topics End-->
