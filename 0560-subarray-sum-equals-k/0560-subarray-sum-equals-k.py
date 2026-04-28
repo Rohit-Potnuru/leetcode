@@ -7,10 +7,10 @@ class Solution:
         sumMap[0] = 1
         for i in range(n):
             prefixSum += nums[i]
-            if prefixSum - k in sumMap:
-                total += sumMap[prefixSum - k]
             if prefixSum not in sumMap:
                 sumMap[prefixSum] = 0
             sumMap[prefixSum] += 1
-            
+            if prefixSum - k in sumMap:
+                total += sumMap[prefixSum - k]
+
         return total
