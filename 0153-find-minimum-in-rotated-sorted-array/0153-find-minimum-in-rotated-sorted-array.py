@@ -5,9 +5,8 @@ class Solution:
             mid = (left - right)//2 + right
             if nums[left] < nums[right]:
                 return nums[left]
+            elif nums[left] <= nums[mid]:
+                left = mid + 1
             else:
-                if nums[left] <= nums[mid]:
-                    left = mid + 1
-                else:
-                    right = mid
+                right = mid
         return nums[left]
