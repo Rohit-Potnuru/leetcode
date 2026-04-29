@@ -1,9 +1,8 @@
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         min_k = 1
-        max_k = 0
-        for pile in piles:
-            max_k = max(max_k, pile)
+        max_k = 10**9
+
 
         def getSpeed(k):
             count = 0
