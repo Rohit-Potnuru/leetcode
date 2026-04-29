@@ -4,7 +4,6 @@ class Solution:
         right = len(nums)
         while left < right:
             mid = (left - right)//2 + right
-            print(left, right, mid)
             if target == nums[mid]:
                 return mid
             elif nums[left] < nums[mid]:
