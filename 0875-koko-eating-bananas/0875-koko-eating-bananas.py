@@ -3,11 +3,10 @@ class Solution:
         min_k = 1
         max_k = 10**9
 
-
         def getSpeed(k):
             count = 0
             for pile in piles:
-                count += pile//k + (pile % k > 0)
+                count += (pile + k - 1)//k 
             return count
 
         while min_k < max_k:
