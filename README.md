@@ -21,6 +21,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0219-contains-duplicate-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Rohit-Potnuru/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+| [0283-move-zeroes](https://github.com/Rohit-Potnuru/leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Rohit-Potnuru/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
@@ -160,6 +161,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 | [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+| [0283-move-zeroes](https://github.com/Rohit-Potnuru/leetcode/tree/main/0283-move-zeroes/) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
