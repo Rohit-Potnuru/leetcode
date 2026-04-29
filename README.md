@@ -27,6 +27,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Rohit-Potnuru/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0704-binary-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0704-binary-search/) | Easy |
+| [0875-koko-eating-bananas](https://github.com/Rohit-Potnuru/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -121,6 +122,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohit-Potnuru/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0704-binary-search/) | Easy |
+| [0875-koko-eating-bananas](https://github.com/Rohit-Potnuru/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
