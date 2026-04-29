@@ -68,6 +68,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
+| [0680-valid-palindrome-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0680-valid-palindrome-ii/) | Easy |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -162,10 +163,12 @@ I am pushing all of my leet code solved problems to this repository
 | [0015-3sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0015-3sum/) | Medium |
 | [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0283-move-zeroes](https://github.com/Rohit-Potnuru/leetcode/tree/main/0283-move-zeroes/) | Easy |
+| [0680-valid-palindrome-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0680-valid-palindrome-ii/) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0011-container-with-most-water/) | Medium |
+| [0680-valid-palindrome-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0680-valid-palindrome-ii/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
