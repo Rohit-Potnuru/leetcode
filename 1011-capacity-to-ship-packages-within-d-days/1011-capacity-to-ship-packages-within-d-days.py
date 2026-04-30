@@ -1,25 +1,21 @@
 class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
-        def getTotalDays(capacity: int):
+        def getDays(capacity: int) -> int:
             totalDays = 1
             currCap = capacity
             for weight in weights:
-                if weight > capacity:
-                    return float('inf')
                 if currCap < weight:
                     currCap = capacity
                     totalDays += 1
                 currCap -= weight
             return totalDays
         
-        min_cap = 1
-        max_cap = 25 * 10**6
-        while min_cap < max_cap:
-            mid_cap = (max_cap - min_cap)//2 + min_cap
-            curr_days = getTotalDays(mid_cap)
-            if curr_days <= days:
-                max_cap = mid_cap
+        left = max(weights)       # must fit heaviest package
+        right = sum(weights)      # ship all in one day
+        while left < right:
+            mid = (left + right) // 2
+            if getDays(mid) <= days:
+                right = mid
             else:
-                min_cap = mid_cap + 1
-        return min_cap
-                
+                left = mid + 1
+        return left
