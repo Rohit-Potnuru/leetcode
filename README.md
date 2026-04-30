@@ -25,6 +25,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0219-contains-duplicate-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Rohit-Potnuru/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0283-move-zeroes](https://github.com/Rohit-Potnuru/leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Rohit-Potnuru/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
@@ -45,6 +46,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0074-search-a-2d-matrix](https://github.com/Rohit-Potnuru/leetcode/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
+| [0240-search-a-2d-matrix-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -114,6 +116,7 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
+| [0240-search-a-2d-matrix-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
@@ -127,6 +130,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohit-Potnuru/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0162-find-peak-element](https://github.com/Rohit-Potnuru/leetcode/tree/main/0162-find-peak-element/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0704-binary-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Rohit-Potnuru/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Rohit-Potnuru/leetcode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
