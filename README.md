@@ -20,6 +20,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rohit-Potnuru/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/Rohit-Potnuru/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohit-Potnuru/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
+| [0162-find-peak-element](https://github.com/Rohit-Potnuru/leetcode/tree/main/0162-find-peak-element/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0219-contains-duplicate-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Rohit-Potnuru/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
@@ -122,6 +123,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0033-search-in-rotated-sorted-array](https://github.com/Rohit-Potnuru/leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohit-Potnuru/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
+| [0162-find-peak-element](https://github.com/Rohit-Potnuru/leetcode/tree/main/0162-find-peak-element/) | Medium |
 | [0704-binary-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/Rohit-Potnuru/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/Rohit-Potnuru/leetcode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
