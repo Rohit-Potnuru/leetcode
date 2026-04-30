@@ -9,6 +9,8 @@ class Solution:
             else:
                 r = mid
         row = l
+        if row >= m:
+            return False
         l, r = 0, n
         while l < r:
             mid = (l + r)//2
