@@ -17,7 +17,6 @@ class Solution:
         while min_cap < max_cap:
             mid_cap = (max_cap - min_cap)//2 + min_cap
             curr_days = getTotalDays(mid_cap)
-            print(mid_cap, curr_days)
             if curr_days <= days:
                 max_cap = mid_cap
             else:
