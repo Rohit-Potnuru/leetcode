@@ -10,9 +10,9 @@ class Solution:
         def dfs(root):
             if root is None:
                 return 0
-            l = dfs(root.left)
-            r = dfs(root.right)
-            nodeSum = max(max(l, r) + root.val, root.val)
+            l = max(0, dfs(root.left))
+            r = max(0, dfs(root.right))
+            nodeSum = max(l, r) + root.val
             self.maxSum = max(self.maxSum, l + r + root.val)
             self.maxSum = max(self.maxSum, nodeSum)
             return nodeSum
