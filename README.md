@@ -99,6 +99,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0104-maximum-depth-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -128,6 +129,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0104-maximum-depth-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -146,6 +148,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0104-maximum-depth-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0108-convert-sorted-array-to-binary-search-tree/) | Easy |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
