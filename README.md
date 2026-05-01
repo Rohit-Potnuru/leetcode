@@ -43,6 +43,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
+| [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rohit-Potnuru/leetcode/tree/main/1123-lowest-common-ancestor-of-deepest-leaves/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -68,6 +69,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/Rohit-Potnuru/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rohit-Potnuru/leetcode/tree/main/1123-lowest-common-ancestor-of-deepest-leaves/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -105,6 +107,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rohit-Potnuru/leetcode/tree/main/1123-lowest-common-ancestor-of-deepest-leaves/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -140,6 +143,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0199-binary-tree-right-side-view](https://github.com/Rohit-Potnuru/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rohit-Potnuru/leetcode/tree/main/1123-lowest-common-ancestor-of-deepest-leaves/) | Medium |
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -163,6 +167,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0199-binary-tree-right-side-view](https://github.com/Rohit-Potnuru/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/Rohit-Potnuru/leetcode/tree/main/1123-lowest-common-ancestor-of-deepest-leaves/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
