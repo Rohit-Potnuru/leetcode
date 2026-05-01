@@ -14,7 +14,6 @@ class Solution:
             r = max(0, dfs(root.right))
             nodeSum = max(l, r) + root.val
             self.maxSum = max(self.maxSum, l + r + root.val)
-            self.maxSum = max(self.maxSum, nodeSum)
             return nodeSum
         dfs(root)
         return self.maxSum
