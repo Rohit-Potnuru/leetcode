@@ -16,13 +16,10 @@ class Solution:
         queue.append(node)
         visitedMap[node.val] = Node(node.val)
         while len(queue) > 0:
-            size = len(queue)
-            while size > 0:
-                currNode = queue.popleft()
-                for nextNode in currNode.neighbors:
-                    if nextNode.val not in visitedMap:
-                        queue.append(nextNode)
-                        visitedMap[nextNode.val] = Node(nextNode.val)
-                    visitedMap[currNode.val].neighbors.append(visitedMap[nextNode.val])
-                size -= 1
+            currNode = queue.popleft()
+            for nextNode in currNode.neighbors:
+                if nextNode.val not in visitedMap:
+                    queue.append(nextNode)
+                    visitedMap[nextNode.val] = Node(nextNode.val)
+                visitedMap[currNode.val].neighbors.append(visitedMap[nextNode.val])
         return visitedMap[node.val]
