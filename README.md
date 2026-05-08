@@ -40,6 +40,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0102-binary-tree-level-order-traversal](https://github.com/Rohit-Potnuru/leetcode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
+| [0133-clone-graph](https://github.com/Rohit-Potnuru/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/Rohit-Potnuru/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
@@ -67,6 +68,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0076-minimum-window-substring](https://github.com/Rohit-Potnuru/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0128-longest-consecutive-sequence](https://github.com/Rohit-Potnuru/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0133-clone-graph](https://github.com/Rohit-Potnuru/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0219-contains-duplicate-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/Rohit-Potnuru/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
@@ -106,6 +108,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0104-maximum-depth-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
+| [0133-clone-graph](https://github.com/Rohit-Potnuru/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/Rohit-Potnuru/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
@@ -231,4 +234,8 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/Rohit-Potnuru/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/Rohit-Potnuru/leetcode/tree/main/0133-clone-graph/) | Medium |
 <!---LeetCode Topics End-->
