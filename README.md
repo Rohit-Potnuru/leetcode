@@ -22,6 +22,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0128-longest-consecutive-sequence](https://github.com/Rohit-Potnuru/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohit-Potnuru/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0162-find-peak-element](https://github.com/Rohit-Potnuru/leetcode/tree/main/0162-find-peak-element/) | Medium |
+| [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0219-contains-duplicate-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0219-contains-duplicate-ii/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/Rohit-Potnuru/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
@@ -40,6 +41,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0104-maximum-depth-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0127-word-ladder](https://github.com/Rohit-Potnuru/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0199-binary-tree-right-side-view](https://github.com/Rohit-Potnuru/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0433-minimum-genetic-mutation](https://github.com/Rohit-Potnuru/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
@@ -50,6 +52,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0036-valid-sudoku](https://github.com/Rohit-Potnuru/leetcode/tree/main/0036-valid-sudoku/) | Medium |
 | [0074-search-a-2d-matrix](https://github.com/Rohit-Potnuru/leetcode/tree/main/0074-search-a-2d-matrix/) | Medium |
 | [0079-word-search](https://github.com/Rohit-Potnuru/leetcode/tree/main/0079-word-search/) | Medium |
+| [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0212-word-search-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0240-search-a-2d-matrix-ii](https://github.com/Rohit-Potnuru/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0909-snakes-and-ladders](https://github.com/Rohit-Potnuru/leetcode/tree/main/0909-snakes-and-ladders/) | Medium |
@@ -104,6 +107,7 @@ I am pushing all of my leet code solved problems to this repository
 | [0110-balanced-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Rohit-Potnuru/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0199-binary-tree-right-side-view](https://github.com/Rohit-Potnuru/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohit-Potnuru/leetcode/tree/main/0211-design-add-and-search-words-data-structure/) | Medium |
 | [0226-invert-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/Rohit-Potnuru/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
@@ -199,6 +203,7 @@ I am pushing all of my leet code solved problems to this repository
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Rohit-Potnuru/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0200-number-of-islands](https://github.com/Rohit-Potnuru/leetcode/tree/main/0200-number-of-islands/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
