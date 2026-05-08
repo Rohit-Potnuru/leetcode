@@ -8,17 +8,21 @@ class Node:
 
 from typing import Optional
 class Solution:
-    def dfs(self, node: Optional['Node']) -> Optional['Node']:
-        if node is None:
-            return node
-        newNode = Node(node.val)
-        self.visited[node.val] = newNode
-        for neighbor in node.neighbors:
-            if not(neighbor.val in self.visited):
-                self.dfs(neighbor)
-            newNode.neighbors.append(self.visited[neighbor.val])
-        return newNode
-
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        self.visited = dict()
-        return self.dfs(node)
+        visitedMap = dict()
+        queue = deque()
+        if node == None:
+            return None
+        queue.append(node)
+        visitedMap[node.val] = Node(node.val)
+        while len(queue) > 0:
+            size = len(queue)
+            while size > 0:
+                currNode = queue.popleft()
+                for nextNode in currNode.neighbors:
+                    if nextNode.val not in visitedMap:
+                        queue.append(nextNode)
+                        visitedMap[nextNode.val] = Node(nextNode.val)
+                    visitedMap[currNode.val].neighbors.append(visitedMap[nextNode.val])
+                size -= 1
+        return visitedMap[node.val]
