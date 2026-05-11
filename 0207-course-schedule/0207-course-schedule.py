@@ -6,24 +6,14 @@ class Solution:
         for course, preCourse in prerequisites:
             inDegree[course] += 1
             adjMap[preCourse].append(course)
-        
-        def getLeafCourse():
-            res = []
-            for course, degree in enumerate(inDegree):
-                if degree == 0:
-                    res.append(course)
-            return res
 
-        courses = getLeafCourse()
-        totalCourse = len(courses)
-        queue = deque(courses)
-        while len(queue) > 0:
+        completed = 0
+        queue = deque(i  for i in range(numCourses) if inDegree[i] == 0)
+        while queue:
             curr = queue.popleft()
-            inDegree[curr] -= 1
-            for course in adjMap[curr]:
-                inDegree[course] -= 1
-                if inDegree[course] == 0:
-                    queue.append(course)
-                    totalCourse += 1
-            courses = getLeafCourse()
-        return totalCourse == numCourses
+            completed += 1
+            for neighbor in adjMap[curr]:
+                inDegree[neighbor] -= 1
+                if inDegree[neighbor] == 0:
+                    queue.append(neighbor)
+        return completed == numCourses
